@@ -1,11 +1,2 @@
 #!/bin/bash
-
-for file in *.html; do
-    if [ -f "../$file" ] && [ "$file" -ot "../$file" ]; then
-        echo "Skipping $file (already exists and is newer in parent directory)"
-    else
-        echo "Copying $file to parent directory"
-        cp "$file" "../$file"
-    fi
-done
-
+cp -un *.html ../
