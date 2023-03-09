@@ -1,1 +1,1 @@
-permission shell day
+permission shell
